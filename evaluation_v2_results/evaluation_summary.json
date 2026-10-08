@@ -1,0 +1,142 @@
+{
+  "expected_cases": 20,
+  "successful_first_analyses": 2,
+  "analysis_success_rate_all_cases": 0.1,
+  "correct_categories": 2,
+  "category_accuracy_all_cases": 0.1,
+  "category_accuracy_successful_cases": 1.0,
+  "clarification_correct": 2,
+  "clarification_accuracy_all_cases": 0.1,
+  "expected_clarification_cases": 6,
+  "clarification_detected": 0,
+  "clarification_recall_all_expected_cases": 0.0,
+  "semantic_evidence_scored_cases": 2,
+  "semantic_evidence_fully_supported_rate_scored_cases": 1.0,
+  "invalid_manual_rating_cases": [],
+  "latency_recorded_cases": 2,
+  "mean_seconds_successful_recorded": 5.205,
+  "median_seconds_successful_recorded": 5.205,
+  "recorded_prompt_tokens": 1175,
+  "recorded_completion_tokens": 419,
+  "per_category": {
+    "bug": {
+      "expected_cases": 5,
+      "correct": 2,
+      "accuracy_all_cases": 0.4
+    },
+    "ux": {
+      "expected_cases": 5,
+      "correct": 0,
+      "accuracy_all_cases": 0.0
+    },
+    "feature": {
+      "expected_cases": 5,
+      "correct": 0,
+      "accuracy_all_cases": 0.0
+    },
+    "unclear": {
+      "expected_cases": 5,
+      "correct": 0,
+      "accuracy_all_cases": 0.0
+    }
+  },
+  "cases_needing_attention": [
+    {
+      "case_id": "B03",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "B04",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "B05",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "U01",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "U02",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "U03",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "U04",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "U05",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "F01",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "F02",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "F03",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "F04",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "F05",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "C01",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "C02",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "C03",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "C04",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    },
+    {
+      "case_id": "C05",
+      "status": "first_output_unavailable",
+      "note": "首轮输出已不可用且此前未导出，不能把最新结果当首轮。请另用新的来源 ID 评测。"
+    }
+  ],
+  "limits": [
+    "模拟开发样例，不能代表真实用户分布或独立测试集。",
+    "准确率同时展示全样例和成功样例口径。",
+    "逐字引用检查不等于语义证据支持。",
+    "耗时为成功记录的 analyze 节点耗时，不含人工等待和完整端到端耗时。",
+    "Token 只统计已记录的首轮成功调用；未记录的失败/重试费用不在此汇总。"
+  ]
+}

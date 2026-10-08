@@ -1,0 +1,1 @@
+﻿sample_id,source_url,data_origin,split,text,gold_category,gold_requirement_id,dataset_version,prompt_version,model_id,predicted_category,candidate_ids,evidence_valid,human_accepted_without_major_edit,manual_seconds,assisted_seconds,prompt_tokens,completion_tokens,error_type,notes

@@ -1,0 +1,61 @@
+{
+  "backup_id": "20261008T062432Z_3c096845",
+  "historical_files": {
+    "quality_smoke_test.py": true,
+    "quality_smoke_results\\20261008T055740Z_229706a1.json": true,
+    "quality_smoke_results\\20261008T055740Z_229706a1.md": true,
+    "evaluation_v2_recovered\\evaluation_results.csv": true,
+    "evaluation_v2_recovered\\evaluation_review.md": true,
+    "evaluation_v2_recovered\\evaluation_summary.json": true,
+    "evaluation_v2_recovered\\evaluation_summary.md": true,
+    "evaluation_v2_recovered\\recovery_report.csv": true,
+    "evaluation_v2_results\\evaluation_results.csv": true,
+    "evaluation_v2_results\\evaluation_review.md": true,
+    "evaluation_v2_results\\evaluation_summary.json": true,
+    "evaluation_v2_results\\evaluation_summary.md": true
+  },
+  "original_database_rows": {
+    "business.sqlite": {
+      "clarifications": {
+        "before": 2,
+        "after": 3,
+        "missing_or_modified_original_rows": 0
+      },
+      "events": {
+        "before": 113,
+        "after": 119,
+        "missing_or_modified_original_rows": 0
+      },
+      "feedback": {
+        "before": 34,
+        "after": 35,
+        "missing_or_modified_original_rows": 0
+      },
+      "feedback_links": {
+        "before": 10,
+        "after": 10,
+        "missing_or_modified_original_rows": 0
+      },
+      "requirements": {
+        "before": 7,
+        "after": 7,
+        "missing_or_modified_original_rows": 0
+      }
+    },
+    "checkpoints.sqlite": {
+      "checkpoints": {
+        "before": 259,
+        "after": 269,
+        "missing_or_modified_original_rows": 0
+      },
+      "writes": {
+        "before": 582,
+        "after": 613,
+        "missing_or_modified_original_rows": 0
+      }
+    }
+  },
+  "all_preserved": true,
+  "prompt_revision": "quality_v2.4",
+  "prompt_sha256": "7fbb9a40593648fd4e5c22f433d0b4a9464183af268c3c94412bcda2110be567"
+}

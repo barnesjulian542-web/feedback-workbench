@@ -1,0 +1,11 @@
+﻿source_id,text,suggested_category,data_origin
+demo-001,希望支持导出 Excel,feature,synthetic_demo
+demo-002,能不能增加导出表格的功能,feature,synthetic_demo
+demo-003,上传文件后提示报错，无法继续提交,bug,synthetic_demo
+demo-004,每次提交都要重新填写团队信息，很麻烦,ux,synthetic_demo
+demo-005,希望能保存团队资料，下次直接选择,feature,synthetic_demo
+demo-006,登录以后会闪退,bug,synthetic_demo
+demo-007,搜索结果太多，找不到我需要的内容,ux,synthetic_demo
+demo-008,希望增加按日期筛选反馈的功能,feature,synthetic_demo
+demo-009,不好用,unclear,synthetic_demo
+demo-010,页面有点问题，但我说不清楚,unclear,synthetic_demo

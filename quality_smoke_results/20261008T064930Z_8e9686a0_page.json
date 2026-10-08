@@ -1,0 +1,205 @@
+{
+  "run_id": "20261008T064930Z_8e9686a0",
+  "verification_type": "real_model_streamlit_apptest",
+  "source_id": "iter2-B05-01",
+  "data_dir": "C:\\Users\\jo\\Desktop\\jianli\\xiangmu\\LangGraph_feedback_workbench_starter\\feedback-workbench\\data_real_v1",
+  "initial_counts": {
+    "feedback": 34,
+    "requirements": 7
+  },
+  "stages": [
+    {
+      "name": "first_analysis",
+      "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+      "status": "pending",
+      "analysis": {
+        "category": "bug",
+        "title": "上传 CSV 文件返回 500 错误导致失败",
+        "problem": "上传 CSV 文件时出现 500 错误，上传操作失败。",
+        "evidence": [
+          "最急的问题是上传 CSV 出现 500 错误而失败"
+        ],
+        "keywords": [
+          "CSV",
+          "上传",
+          "500错误",
+          "失败"
+        ],
+        "acceptance_criteria": [
+          "上传 CSV 文件可成功完成，不再出现原反馈的500错误"
+        ],
+        "needs_clarification": true,
+        "clarification_questions": [
+          "批量审核功能是否另建需求或暂缓处理？"
+        ]
+      },
+      "next": [
+        "review"
+      ],
+      "clarifications": [],
+      "events": [
+        {
+          "id": 114,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "analyze",
+          "detail": "{\"mode\": \"real\", \"model\": \"qwen-plus\", \"prompt_revision\": \"quality_v2.4\", \"prompt_sha256\": \"7fbb9a40593648fd4e5c22f433d0b4a9464183af268c3c94412bcda2110be567\", \"prompt_tokens\": 1657, \"completion_tokens\": 146, \"seconds\": 4.219}",
+          "created_at": "2026-10-08T06:49:36.076909+00:00"
+        },
+        {
+          "id": 115,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "retrieve",
+          "detail": "{\"candidate_ids\": [], \"method\": \"needs_clarification_skip\"}",
+          "created_at": "2026-10-08T06:49:36.082980+00:00"
+        }
+      ]
+    },
+    {
+      "name": "waiting_for_supplement",
+      "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+      "status": "waiting_clarification",
+      "analysis": {
+        "category": "bug",
+        "title": "上传 CSV 文件返回 500 错误导致失败",
+        "problem": "上传 CSV 文件时出现 500 错误，上传操作失败。",
+        "evidence": [
+          "最急的问题是上传 CSV 出现 500 错误而失败"
+        ],
+        "keywords": [
+          "CSV",
+          "上传",
+          "500错误",
+          "失败"
+        ],
+        "acceptance_criteria": [
+          "上传 CSV 文件可成功完成，不再出现原反馈的500错误"
+        ],
+        "needs_clarification": true,
+        "clarification_questions": [
+          "批量审核功能是否另建需求或暂缓处理？"
+        ]
+      },
+      "next": [
+        "clarify"
+      ],
+      "clarifications": [],
+      "events": [
+        {
+          "id": 114,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "analyze",
+          "detail": "{\"mode\": \"real\", \"model\": \"qwen-plus\", \"prompt_revision\": \"quality_v2.4\", \"prompt_sha256\": \"7fbb9a40593648fd4e5c22f433d0b4a9464183af268c3c94412bcda2110be567\", \"prompt_tokens\": 1657, \"completion_tokens\": 146, \"seconds\": 4.219}",
+          "created_at": "2026-10-08T06:49:36.076909+00:00"
+        },
+        {
+          "id": 115,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "retrieve",
+          "detail": "{\"candidate_ids\": [], \"method\": \"needs_clarification_skip\"}",
+          "created_at": "2026-10-08T06:49:36.082980+00:00"
+        },
+        {
+          "id": 116,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "clarify",
+          "detail": "{\"stage\": \"waiting\", \"round_no\": 1, \"note\": \"流程验证：先确认批量审核是否另建。\"}",
+          "created_at": "2026-10-08T06:49:36.210631+00:00"
+        }
+      ]
+    },
+    {
+      "name": "reanalyzed_pending_human_review",
+      "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+      "status": "pending",
+      "analysis": {
+        "category": "bug",
+        "title": "上传 CSV 文件返回 500 错误导致失败",
+        "problem": "上传 CSV 文件时出现 500 错误，导致上传失败。",
+        "evidence": [
+          "最急的问题是上传 CSV 出现 500 错误而失败。",
+          "本条只处理上传 CSV 的 500 错误，批量审核另开一条需求，当前先不处理。"
+        ],
+        "keywords": [
+          "CSV",
+          "上传",
+          "500错误",
+          "失败"
+        ],
+        "acceptance_criteria": [
+          "上传 CSV 文件可成功完成，不再出现原反馈的500错误"
+        ],
+        "needs_clarification": false,
+        "clarification_questions": []
+      },
+      "next": [
+        "review"
+      ],
+      "clarifications": [
+        {
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "round_no": 1,
+          "text": "本条只处理上传 CSV 的 500 错误，批量审核另开一条需求，当前先不处理。",
+          "created_at": "2026-10-08T06:49:36.278936+00:00"
+        }
+      ],
+      "events": [
+        {
+          "id": 114,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "analyze",
+          "detail": "{\"mode\": \"real\", \"model\": \"qwen-plus\", \"prompt_revision\": \"quality_v2.4\", \"prompt_sha256\": \"7fbb9a40593648fd4e5c22f433d0b4a9464183af268c3c94412bcda2110be567\", \"prompt_tokens\": 1657, \"completion_tokens\": 146, \"seconds\": 4.219}",
+          "created_at": "2026-10-08T06:49:36.076909+00:00"
+        },
+        {
+          "id": 115,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "retrieve",
+          "detail": "{\"candidate_ids\": [], \"method\": \"needs_clarification_skip\"}",
+          "created_at": "2026-10-08T06:49:36.082980+00:00"
+        },
+        {
+          "id": 116,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "clarify",
+          "detail": "{\"stage\": \"waiting\", \"round_no\": 1, \"note\": \"流程验证：先确认批量审核是否另建。\"}",
+          "created_at": "2026-10-08T06:49:36.210631+00:00"
+        },
+        {
+          "id": 117,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "clarify",
+          "detail": "{\"stage\": \"received\", \"round_no\": 1, \"supplement\": \"本条只处理上传 CSV 的 500 错误，批量审核另开一条需求，当前先不处理。\"}",
+          "created_at": "2026-10-08T06:49:36.279574+00:00"
+        },
+        {
+          "id": 118,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "analyze",
+          "detail": "{\"mode\": \"real\", \"model\": \"qwen-plus\", \"prompt_revision\": \"quality_v2.4\", \"prompt_sha256\": \"7fbb9a40593648fd4e5c22f433d0b4a9464183af268c3c94412bcda2110be567\", \"prompt_tokens\": 1686, \"completion_tokens\": 164, \"seconds\": 4.11}",
+          "created_at": "2026-10-08T06:49:40.393804+00:00"
+        },
+        {
+          "id": 119,
+          "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+          "node": "retrieve",
+          "detail": "{\"candidate_ids\": [\"d246b7c5-9c00-4dc0-a808-c3c919fb36d2\", \"c44424d8-b0e9-4b00-830b-4336be10331d\", \"2acba070-76e5-43c7-81f6-6568db7ab54d\", \"74a20b7a-61ff-49ae-90ab-7a7c513b27d8\"], \"method\": \"character_bigram\"}",
+          "created_at": "2026-10-08T06:49:40.400852+00:00"
+        }
+      ]
+    }
+  ],
+  "status": "pass",
+  "human_approval": "未提交；停在待人工审核",
+  "feedback_id": "c0a73d0c665b78f3ade322348496491c285e653edb80d16328608499782efb67",
+  "final_review_options": [
+    "创建新需求",
+    "关联已有需求",
+    "待补充信息",
+    "驳回并归档"
+  ],
+  "final_counts": {
+    "feedback": 35,
+    "requirements": 7
+  },
+  "seconds": 9.903
+}

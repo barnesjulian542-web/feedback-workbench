@@ -1,0 +1,366 @@
+{
+  "run_id": "20261008T062854Z_96edfc01",
+  "evaluation_type": "synthetic_development_regression",
+  "scope_review": "验收范围仍需逐条人工评分；自动通过不代表全部质量通过。",
+  "counts": {
+    "pass": 8,
+    "fail": 0,
+    "error": 0,
+    "not_run": 0
+  },
+  "cases": [
+    {
+      "case_id": "R01",
+      "text": "最急的问题是上传 CSV 出现 500 错误而失败。另外也希望新增批量审核功能，这条反馈涉及两个问题。",
+      "expected_category": "bug",
+      "expected_needs_clarification": true,
+      "manual_check": "主诉求为上传故障；问题应确认批量审核是否拆单，不能重复询问哪个更急。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "bug",
+        "title": "上传 CSV 文件返回 500 错误导致失败",
+        "problem": "用户上传 CSV 文件时服务端返回 500 错误，操作失败。",
+        "evidence": [
+          "上传 CSV 出现 500 错误而失败"
+        ],
+        "keywords": [
+          "CSV",
+          "500错误",
+          "上传失败"
+        ],
+        "acceptance_criteria": [
+          "上传 CSV 文件不再触发 500 错误",
+          "上传流程可成功完成并返回预期响应",
+          "错误原因（如数据格式、大小、编码等）待排查确认"
+        ],
+        "needs_clarification": true,
+        "clarification_questions": [
+          "批量审核功能是否需另建一条反馈记录？",
+          "当前反馈中是否仅需处理上传 500 错误问题，批量审核暂缓？"
+        ]
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1557,
+        "completion_tokens": 189
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 5.491
+    },
+    {
+      "case_id": "R02",
+      "text": "上传 CSV 出现 500 错误，导入失败，列表里没有新记录。",
+      "expected_category": "bug",
+      "expected_needs_clarification": false,
+      "manual_check": "异常、失败及记录缺失属于同一故障；不能过度澄清或擅自确定接口成功状态码。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "bug",
+        "title": "CSV 上传返回 500 错误导致导入失败且无新记录",
+        "problem": "用户上传 CSV 文件时服务端返回 500 错误，导入流程中断，数据未写入系统，列表中未出现新增记录。",
+        "evidence": [
+          "上传 CSV 出现 500 错误，导入失败，列表里没有新记录。"
+        ],
+        "keywords": [
+          "CSV",
+          "500错误",
+          "上传失败",
+          "导入失败",
+          "列表无记录"
+        ],
+        "acceptance_criteria": [
+          "CSV 文件成功上传并完成解析与入库",
+          "导入成功后列表中可见对应新记录",
+          "500 错误被消除，错误响应应为更具体的客户端或服务端错误（如 400、422 或 503）并附带可排查的提示信息"
+        ],
+        "needs_clarification": false,
+        "clarification_questions": []
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1547,
+        "completion_tokens": 216
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 5.377
+    },
+    {
+      "case_id": "R03",
+      "text": "审核能够正常完成，但原文的字号太小，我得不断放大页面才能看清。",
+      "expected_category": "ux",
+      "expected_needs_clarification": false,
+      "manual_check": "不能编造WCAG最低16px要求；字号等参数应待确认，不强制增加独立缩放控件。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "ux",
+        "title": "审核页面原文字号过小影响可读性",
+        "problem": "审核功能正常，但原文显示字号过小，用户需反复放大页面才能看清内容，降低阅读效率和体验。",
+        "evidence": [
+          "原文的字号太小，我得不断放大页面才能看清"
+        ],
+        "keywords": [
+          "审核",
+          "字号",
+          "可读性",
+          "页面放大"
+        ],
+        "acceptance_criteria": [
+          "审核页面中原文的字号调整至无需手动放大即可清晰阅读",
+          "字号调整后的可读性改善效果待确认",
+          "调整范围明确为审核流程中的原文展示区域，不扩展至其他模块"
+        ],
+        "needs_clarification": false,
+        "clarification_questions": []
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1545,
+        "completion_tokens": 163
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 4.135
+    },
+    {
+      "case_id": "R04",
+      "text": "搜索能够找到正确的需求，但每次需要等十多秒，频繁查询很拖沓。",
+      "expected_category": "ux",
+      "expected_needs_clarification": false,
+      "manual_check": "十多秒是模拟反馈中的主张；不能擅自增加3秒、弱网、连续3次等验收阈值。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "ux",
+        "title": "搜索响应时间过长影响操作效率",
+        "problem": "搜索功能虽能返回正确结果，但每次响应耗时十多秒，导致频繁查询时操作拖沓、体验下降。",
+        "evidence": [
+          "搜索能够找到正确的需求，但每次需要等十多秒，频繁查询很拖沓。"
+        ],
+        "keywords": [
+          "搜索",
+          "响应慢",
+          "等待时间",
+          "操作效率"
+        ],
+        "acceptance_criteria": [
+          "搜索响应时间显著缩短，保持结果准确性不变",
+          "优化后的响应时间目标及测试条件待确认"
+        ],
+        "needs_clarification": false,
+        "clarification_questions": []
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1544,
+        "completion_tokens": 146
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 3.93
+    },
+    {
+      "case_id": "R05",
+      "text": "目前不能给需求添加负责人，希望新增负责人字段，便于分派处理。",
+      "expected_category": "feature",
+      "expected_needs_clarification": false,
+      "manual_check": "验收聚焦设置和保存负责人；不能直接增加按负责人筛选或统计这一独立能力。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "feature",
+        "title": "需求管理中新增负责人字段",
+        "problem": "当前系统不支持为需求指定负责人，导致需求分派和跟踪缺乏明确责任归属。",
+        "evidence": [
+          "目前不能给需求添加负责人",
+          "希望新增负责人字段，便于分派处理"
+        ],
+        "keywords": [
+          "需求",
+          "负责人",
+          "分派",
+          "字段"
+        ],
+        "acceptance_criteria": [
+          "需求详情页和编辑页中可见可编辑的负责人字段",
+          "负责人字段支持从用户列表中选择或输入（具体交互方式待确认）",
+          "保存后负责人信息可持久化存储并展示在需求列表及详情中"
+        ],
+        "needs_clarification": false,
+        "clarification_questions": []
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1542,
+        "completion_tokens": 161
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 4.064
+    },
+    {
+      "case_id": "R06",
+      "text": "希望增加智能化能力，具体想解决什么问题还没确定。",
+      "expected_category": "unclear",
+      "expected_needs_clarification": true,
+      "manual_check": "问题聚焦具体场景和目标；不擅自给出95%准确率、2秒等数字或绑定具体业务。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "unclear",
+        "title": "智能化能力需求不明确",
+        "problem": "用户提出希望增加智能化能力，但未说明具体要解决的问题、使用场景、目标用户或预期效果。",
+        "evidence": [
+          "希望增加智能化能力，具体想解决什么问题还没确定。"
+        ],
+        "keywords": [
+          "智能化",
+          "需求不明确",
+          "场景缺失"
+        ],
+        "acceptance_criteria": [
+          "明确智能化能力需解决的具体业务问题",
+          "确认典型使用场景和目标用户",
+          "定义可衡量的预期效果或成功标准"
+        ],
+        "needs_clarification": true,
+        "clarification_questions": [
+          "您期望智能化能力主要服务于哪类用户或角色？",
+          "是否存在当前手动操作繁琐、易出错或响应滞后等具体痛点？",
+          "是否有参考的类似智能功能（如其他系统中的智能推荐、自动填充、异常预警等）？"
+        ]
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1538,
+        "completion_tokens": 193
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 5.041
+    },
+    {
+      "case_id": "R07",
+      "text": "主要想解决审核页面字号太小、阅读费力的问题。也希望增加截图上传功能，这两个诉求都要处理。",
+      "expected_category": "ux",
+      "expected_needs_clarification": true,
+      "manual_check": "多诉求规则也应适用于ux；验收聚焦可读性，确认截图上传是否单独处理。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "ux",
+        "title": "审核页面字号过小导致阅读费力",
+        "problem": "审核页面字体尺寸过小，用户需反复放大才能看清内容，造成阅读困难和视觉疲劳。",
+        "evidence": [
+          "主要想解决审核页面字号太小、阅读费力的问题"
+        ],
+        "keywords": [
+          "审核页面",
+          "字号",
+          "阅读费力",
+          "可读性"
+        ],
+        "acceptance_criteria": [
+          "审核页面文字可读性提升，用户无需手动放大即可清晰阅读正文内容",
+          "字号调整方案需适配主流设备屏幕与浏览器缩放默认设置",
+          "调整后的字号及行高、字间距等排版参数待确认"
+        ],
+        "needs_clarification": true,
+        "clarification_questions": [
+          "‘截图上传功能’是否需在本条反馈中一并处理，还是建议另建一条独立需求？",
+          "当前审核页面具体是哪个模块或URL路径？是否存在多端（PC/移动端）一致性要求？",
+          "是否有优先级倾向：先保障字号可读性，还是需同步交付截图上传功能？"
+        ]
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1550,
+        "completion_tokens": 250
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 6.047
+    },
+    {
+      "case_id": "R08",
+      "text": "最急的问题是上传 CSV 出现 500 错误而失败。另外也希望新增批量审核功能，这条反馈涉及两个问题。\n\n本条只处理上传 CSV 的 500 错误，批量审核另开一条需求，当前先不处理。",
+      "expected_category": "bug",
+      "expected_needs_clarification": false,
+      "manual_check": "补充已确认拆分范围，应停止重复澄清；不能重新把批量审核写进验收条件。",
+      "status": "pass",
+      "acceptance_scope_manual": "未评分",
+      "analysis": {
+        "category": "bug",
+        "title": "上传 CSV 时返回 500 错误导致失败",
+        "problem": "用户上传 CSV 文件时服务端返回 HTTP 500 错误，导致上传操作失败，无法完成数据导入。",
+        "evidence": [
+          "最急的问题是上传 CSV 出现 500 错误而失败"
+        ],
+        "keywords": [
+          "CSV",
+          "500错误",
+          "上传失败"
+        ],
+        "acceptance_criteria": [
+          "上传 CSV 文件时不再返回 500 错误",
+          "上传流程能正常完成并反馈成功或明确的业务错误（如格式不支持、字段缺失等）",
+          "错误响应状态码及提示信息符合 REST API 设计规范，具体状态码与错误分类待确认"
+        ],
+        "needs_clarification": false,
+        "clarification_questions": []
+      },
+      "usage": {
+        "mode": "real",
+        "model": "qwen-plus",
+        "prompt_revision": "quality_v2",
+        "prompt_sha256": "f211770e97b6b3488a099ebe54c5d8370905a17b18f8b9fae6a466cf6102c7d0",
+        "prompt_tokens": 1586,
+        "completion_tokens": 189
+      },
+      "category_correct": true,
+      "clarification_correct": true,
+      "quote_exact_match": true,
+      "questions_consistent": true,
+      "seconds": 4.968
+    }
+  ]
+}

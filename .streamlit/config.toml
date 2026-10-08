@@ -1,0 +1,11 @@
+[server]
+# Keep local traffic on loopback and retain sessions across brief interruptions.
+address = "127.0.0.1"
+headless = true
+websocketPingInterval = 30
+disconnectedSessionTTL = 600
+runOnSave = false
+
+[browser]
+serverAddress = "127.0.0.1"
+

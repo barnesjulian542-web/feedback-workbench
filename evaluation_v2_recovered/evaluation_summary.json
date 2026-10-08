@@ -1,0 +1,51 @@
+{
+  "expected_cases": 20,
+  "successful_first_analyses": 20,
+  "analysis_success_rate_all_cases": 1.0,
+  "correct_categories": 20,
+  "category_accuracy_all_cases": 1.0,
+  "category_accuracy_successful_cases": 1.0,
+  "clarification_correct": 19,
+  "clarification_accuracy_all_cases": 0.95,
+  "expected_clarification_cases": 6,
+  "clarification_detected": 5,
+  "clarification_recall_all_expected_cases": 0.8333,
+  "semantic_evidence_scored_cases": 20,
+  "semantic_evidence_fully_supported_rate_scored_cases": 1.0,
+  "invalid_manual_rating_cases": [],
+  "latency_recorded_cases": 20,
+  "mean_seconds_successful_recorded": 4.822,
+  "median_seconds_successful_recorded": 4.794,
+  "recorded_prompt_tokens": 11676,
+  "recorded_completion_tokens": 3909,
+  "per_category": {
+    "bug": {
+      "expected_cases": 5,
+      "correct": 5,
+      "accuracy_all_cases": 1.0
+    },
+    "ux": {
+      "expected_cases": 5,
+      "correct": 5,
+      "accuracy_all_cases": 1.0
+    },
+    "feature": {
+      "expected_cases": 5,
+      "correct": 5,
+      "accuracy_all_cases": 1.0
+    },
+    "unclear": {
+      "expected_cases": 5,
+      "correct": 5,
+      "accuracy_all_cases": 1.0
+    }
+  },
+  "cases_needing_attention": [],
+  "limits": [
+    "模拟开发样例，不能代表真实用户分布或独立测试集。",
+    "准确率同时展示全样例和成功样例口径。",
+    "逐字引用检查不等于语义证据支持。",
+    "耗时为成功记录的 analyze 节点耗时，不含人工等待和完整端到端耗时。",
+    "Token 只统计已记录的首轮成功调用；未记录的失败/重试费用不在此汇总。"
+  ]
+}

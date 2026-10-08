@@ -1,0 +1,25 @@
+.env
+.venv/
+data/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Keep local business data, checkpoints, and private backups on this computer.
+data_real_v1/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+quality_iteration_backups/
+connection_fix_backups/
+*.bak
+
+# Local runtime files are not project source.
+runtime_logs/
+.test_tmp/
+.streamlit/secrets.toml
+
+# Isolated experiment databases and local source snapshots.
+artifacts/**/data_*/
+artifacts/**/before/

@@ -1,0 +1,9 @@
+﻿Verified on 2026-10-08, Asia/Shanghai.
+Offline tests: 9 existing workflow/page tests passed; 2 connection tests passed.
+Live Streamlit 8502 probe (final run):
+WebSocket connected and page initialized
+WebSocket stayed open for 36 seconds across heartbeat interval
+Disconnected session successfully restored
+No model inference or feedback/review submission performed by this probe.
+Codex network: two consecutive doctor runs passed HTTP provider reachability and WebSocket handshake; see connection_verification.json.
+Domestic model endpoint: three unauthenticated TLS checks returned expected 401 in 0.46, 0.25, 0.21 seconds.
